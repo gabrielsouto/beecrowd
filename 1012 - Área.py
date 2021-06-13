@@ -1,11 +1,13 @@
 a, b, c = map(float, input().split())
-area_triangulo_retangulo = '{:5.3f}'.format(a*c/2)
-area_circulo = '{:5.3f}'.format(3.14159*c**2)
-area_trapezio = '{:5.3f}'.format((a+b)/2*c)
-area_quadrado = '{:5.3f}'.format(b**2)
-area_retangulo = '{:5.3f}'.format(a*b)
-print(f"TRIANGULO: {area_triangulo_retangulo}")
-print(f"CIRCULO: {area_circulo}")
-print(f"TRAPEZIO: {area_trapezio}")
-print(f"QUADRADO: {area_quadrado}")
-print(f"RETANGULO: {area_retangulo}")
+area_triangulo_retangulo = a*c/2
+area_circulo = 3.14159*c**2
+area_trapezio = (a+b)/2*c
+area_quadrado = b**2
+area_retangulo = a*b
+print(f"TRIANGULO: {area_triangulo_retangulo:.3f}")
+print(f"CIRCULO: {area_circulo:.3f}")
+print(f"TRAPEZIO: {area_trapezio:.3f}")
+print(f"QUADRADO: {area_quadrado:.3f}")
+print(f"RETANGULO: {area_retangulo:.3f}")
+
+#{area:.2f}
